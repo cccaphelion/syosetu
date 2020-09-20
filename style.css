@@ -2,7 +2,11 @@
   width: 210px;
   margin-top: 14px;
 }
+html{
+  background-color: #f7f7fa;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 
+}
 .main-nav {
   display: flex;
   font-size: 0.85rem;
@@ -53,6 +57,10 @@ a {
 .main-nav li:nth-child(-n+4):hover::before {
   left: 15%;
   width: 70%;
+}
+.page-header h1 p {
+  position: absolute;
+
 }
 
 .page-header {
@@ -168,37 +176,40 @@ a {
 
 
 *{padding: 0;margin: 0;box-sizing: border-box;}
-li{
+.container li{
     list-style: none;
     float: left;
 }
-ul img{
+.container ul img{
     width: 333px;
     height: auto;
 
 }
 .container{
-    width: 1000px;
-    margin: 40px auto 0;
+
+box-shadow: 1px 1px 8px rgba(133, 213, 225, .8);
+    width: 999px;
+    height: 166.5px;
+    margin: 35px auto 0;
     overflow: hidden;
     position: relative;
-    border: 0px solid black;
+border: 1.5px solid rgba(133, 213, 225, .5);
 
     padding-left: 0px;
 padding-right: 0px;
 }
-ol{
+.container ol{
     position: absolute;
     bottom: 0;
     left: 50%;
-    padding: 10px;
+    padding: 6px;
     margin-left: -50px;
     z-index: 999;
 
 }
-ol li{
-    width: 25px;
-    height: 25px;
+.container ol li{
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     border: none;
     border-radius: 50%;
@@ -225,7 +236,7 @@ ol li{
       }
 
 }
-ol li {
+.container ol li {
   animation:focus 9s linear infinite ;//时间要和图片保持一致
   }
   ol li:nth-child(1) {
@@ -250,3 +261,197 @@ ol li {
       background-color: #fff;
     }
   }
+
+
+.rank{
+  margin-top: 35px;
+}
+  article{
+    width: 74%;
+  }
+  aside{
+    width: 22%;
+  }
+  .rank{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+.rank-genre{
+
+  display: flex;
+  list-style: none;
+margin-bottom: 3.17px;
+justify-content: space-between;
+
+}
+.rank-genre li{
+  margin-right: 20px;
+}
+.rank-number{
+  font-weight: bold;
+  margin-right: 6px;
+  color: rgba(0, 0, 0, .6);
+}
+.rank-genre a i{
+  color: rgba(0, 0, 0, .6);
+}
+.rank-genre a i:hover{
+    color: #0bd;
+    box-shadow: 2px 2px 14px rgba(133, 213, 225, .65);
+
+text-shadow: 2px 2px 14px rgba(133, 213, 225, .65);
+}
+
+.rank-genre li a{
+  text-decoration:none;
+color: rgba(0, 0, 0, .6)
+}
+.rank-container{
+  padding: 19px 0;
+
+}
+.novel-wrapper{
+height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-top: 0.7px solid rgba(0, 0, 0, .4);
+      padding-top: 20px;
+}
+.novel-item{
+  background-color: #fff;
+  border-radius:10px;
+  box-shadow: 2px 2px 14px rgba(133, 213, 225, .25),-2px -2px 14px rgba(133, 213, 225, .25);
+  width: 50%;
+  margin-right: 17px;
+    padding: 10px;
+    margin-bottom: 17px;
+    transition: all 0.4s;
+}
+
+
+.novel-item:hover{
+    box-shadow: 3px 3px 18px rgba(133, 213, 225, .7),-3px -3px 18px rgba(133, 213, 225, .7);
+
+}
+.box-title{
+  color: rgba(0, 0, 0, .7);
+}
+
+.title{
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.author{
+  padding-left: 14px;
+  font-size: 13px;
+
+}
+.tag{
+display: inline-block;
+  font-size:8px;
+margin-left: 20px;}
+
+.rank-genre a:hover{
+  color: #0bd;
+}
+#underline{
+
+
+
+    position: relative;
+}
+
+#underline:after{
+    content: "";
+    width: 0;
+    height: 1.4px;
+    background: rgba(0,187,221,0.6);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transition: all .8s;
+}
+
+#underline:hover:after{
+   left: 0%;
+   width: 100%;
+
+}
+.tag span{
+
+  font-weight:bold;
+
+    border-radius: 24px;
+    display: inline-block;
+    padding:3.3px 5.5px;
+
+}
+.tag span:nth-of-type(1){
+
+    margin-right: 5px;
+}
+#hifa{
+  background-color:  rgba(133, 213, 225, .55);
+  color: #0bd;
+}
+#fan{
+
+  background-color:  rgba(219, 163, 213, .55);
+  color: #A86D9E
+}
+#lowf{
+  background-color:  #82F9BE;
+  color: #46C089;
+
+}
+
+#yishijie{
+  background-color:  #F9F2CB;
+  color: #BAA89B
+}
+#love{
+  background-color: #FFE4E0;
+  color: #FF6868;
+}
+#wtffloat{
+  display: flex;
+}
+#doubledigit{
+  padding-left: 23px;
+}
+
+/*修改侧边栏通知部分*/
+.noti-item{
+    box-shadow: 2px 2px 14px rgba(133, 213, 225, .25), -2px -2px 14px rgba(133, 213, 225, .25);
+    transition: all 0.4s;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 17px;
+}
+.noti-item:hover{
+  box-shadow: 3px 3px 18px rgba(133, 213, 225, .7), -3px -3px 18px rgba(133, 213, 225, .7);
+}
+.noti-item span{
+  margin-left: 22px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, .6);
+}
+.noti-icon{
+  margin-right: 5px;
+}
+.fa-bell{
+  color: #0bd;
+}
+.fa-exclamation-circle{
+  color: #ef6262;
+}
+.sub-title{
+  color: rgba(0, 0, 0, .7);
+  margin-bottom: 17px;
+}
+.noti-title{
+  font-size: 14px;
+}
