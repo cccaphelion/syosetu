@@ -127,10 +127,10 @@ a {
 
   .main-nav .navicon{
 
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .main-nav .navicon a{
-  font-size: 1rem;
+  font-size: 1.2rem;
     color: rgba(133, 213, 225, 1);;
 
   }
@@ -173,13 +173,12 @@ li{
     float: left;
 }
 ul img{
-    width: 400px;
+    width: 333px;
     height: auto;
 
 }
 .container{
-    //容器大小要和图片大小保持一致。
-    height: 544px;
+    width: 1000px;
     margin: 40px auto 0;
     overflow: hidden;
     position: relative;
@@ -201,13 +200,13 @@ ol li{
     width: 25px;
     height: 25px;
     background-color: #fff;
-    border: 1px solid red;
+    border: none;
     border-radius: 50%;
     margin: 0 10px;
 }
 
 .container ul{
-       animation:Yui 6s cubic-bezier(0, 1, 0, 1) 2s infinite ;
+       animation:Yui 9s cubic-bezier(0, 1, 0, 1) 3s infinite ;
        width: 400%;
 
 }
@@ -216,10 +215,10 @@ ol li{
         transform: translateX(0px);
       }
       33% {
-        transform: translateX(-960px);
+        transform: translateX(-999px);
       }
       66% {
-        transform: translateX(-1920px);
+        transform: translateX(-1998px);
       }
       100% {
         transform: translateX(0px);
@@ -227,7 +226,7 @@ ol li{
 
 }
 ol li {
-  animation:focus 6s linear infinite ;//时间要和图片保持一致
+  animation:focus 9s linear infinite ;//时间要和图片保持一致
   }
   ol li:nth-child(1) {
     animation-delay: 0s;
@@ -240,13 +239,14 @@ ol li {
   }
 
   @keyframes focus {
+
     0% {
-      background-color: #000;
+      background-color: #45b9cf;
     }
     20% {
-      background-color: #000;
+      background-color: #45b9cf;
     }
-    30% {
+    33% {
       background-color: #fff;
     }
   }
