@@ -312,7 +312,7 @@ color: rgba(0, 0, 0, .6)
 
 }
 .novel-wrapper{
-height: 50.22%;
+height: 52%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -347,7 +347,7 @@ height: 50.22%;
 .author{
   padding-left: 14px;
   font-size: 13px;
-
+color: rgba(0, 0, 0, .6);
 }
 .tag{
 display: inline-block;
@@ -418,10 +418,14 @@ margin-left: 20px;}
 }
 #wtffloat{
   display: flex;
+  justify-content: space-between;
 }
 #doubledigit{
-  padding-left: 23px;
+  padding-left: 27px;
 }
+
+
+
 
 /*修改侧边栏通知部分*/
 .noti-item{
