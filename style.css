@@ -154,104 +154,6 @@ a {
   text-shadow: 1px 1px 20px #45b9cf;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container li {
-  list-style: none;
-  float: left;
-}
-
-.container ul img {
-  width: 333px;
-  height: auto;
-}
-
-.container {
-  box-shadow: 1px 1px 8px rgba(133, 213, 225, .8);
-  width: 999px;
-  height: 166.5px;
-  margin: 35px auto 0;
-  overflow: hidden;
-  position: relative;
-  border: 1.5px solid rgba(133, 213, 225, .5);
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.container ol {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  padding: 6px;
-  margin-left: -50px;
-  z-index: 999;
-}
-
-.container ol li {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border: none;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-
-.container ul {
-  animation: Yui 9s cubic-bezier(0, 1, 0, 1) 3s infinite;
-  width: 400%;
-}
-
-@keyframes Yui {
-  0% {
-    transform: translateX(0px);
-  }
-
-  33% {
-    transform: translateX(-999px);
-  }
-
-  66% {
-    transform: translateX(-1998px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-.container ol li {
-  animation: focus 9s linear infinite; //时间要和图片保持一致
-}
-
-ol li:nth-child(1) {
-  animation-delay: 0s;
-}
-
-ol li:nth-child(2) {
-  animation-delay: 3s;
-}
-
-ol li:nth-child(3) {
-  animation-delay: 6s;
-}
-
-@keyframes focus {
-  0% {
-    background-color: #45b9cf;
-  }
-
-  20% {
-    background-color: #45b9cf;
-  }
-
-  33% {
-    background-color: #fff;
-  }
-}
 
 .rank {
   margin-top: 35px;
@@ -469,7 +371,7 @@ aside {
 
 .off-twi {
   display: flex;
-  
+
 }
 
 .sub-twi:nth-child(-n+1) {
@@ -524,4 +426,31 @@ padding: 0px;
 
 border-top-right-radius:10px;
 
+}
+
+
+.colfive-item{
+
+
+display: inline-block;
+width: 19%;
+height:5%;
+background-color: #0bd;
+margin-bottom: 10px;
+}
+
+.colfour-item{
+  display: inline-block;
+  width: 23%;
+  height:6%;
+  background-color: #0bd;
+  margin-bottom: 10px;
+
+}
+.colfour-item img{
+width: 150px
+}
+
+.relsite img{
+  width: 250px;
 }
