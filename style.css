@@ -177,7 +177,7 @@ aside {
 .rank-genre {
   display: flex;
   list-style: none;
-  margin-bottom: 3.17px;
+  margin-bottom: 4px;
   justify-content: space-between;
 }
 
@@ -333,7 +333,37 @@ margin-right:0px;
   background-color: #F9F2CB;
   color: #BAA89B
 }
+#hyuum{
+  background-color: rgba(193,142,89,0.7);
+  color: rgba(85, 56, 15, 0.5);
+}
+.novel-item{
 
+}
+#wenyi{
+  background-color: rgba(53,63,153,0.3);
+  color: rgba(53,63,153,0.9);
+}
+#sono{
+  background-color: rgba(34,109,187,0.5);
+  color: rgba(34,109,187,0.9);
+
+}
+#sf{
+  background-color: rgba(65,131,24,.4);
+  color: rgba(65,131,24,1);
+}
+.noti-item{
+  background-color: #fff;
+}
+#kongsci{
+  background-color: rgba(209,220,225,0.8);
+  color: rgba(68,116,135,1);
+}
+#tonghua{
+  background-color:rgba(241,174,202,0.3);
+  color: rgba(241,174,202,0.9);
+}
 #love {
   background-color: #FFE4E0;
   color: #FF6868;
@@ -461,14 +491,15 @@ border-top-right-radius:10px;
 
 .update{
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50% 50% ;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    grid-row-gap: 15px;
+grid-column-gap: 15px;
 }
 .update-item{
   padding: 10px;
 background-color: #0bd;
-margin-bottom: 15px;
-margin-right: 15px;
+
 display: grid;
 grid-template-rows: 50% 50%;
 }
@@ -489,6 +520,7 @@ grid-template-rows: 50% 50%;
 }
 .colfive-item{
   padding: 10px;
+  padding-bottom: 7px;
 background-color: #0bd;
 
 
@@ -506,6 +538,7 @@ display: grid;
 
 .colfive-item-others span:nth-child(2){
   display: block;
+
 }
 
 
@@ -531,10 +564,32 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
 
-
+.colfour-item span{
+  display: inline-block;
+    padding: 6px;
+    font-weight: bold;
+}
 #auta{
   display: grid;
   grid-template-columns: 37% 63%;
+}
+#wtffloat .title{
+  font-weight: bold;
+  color: rgba(0, 0, 0, .7);
+}
+.colfive-item-title, .update-item-title{
+  font-weight: bold;
+
+color: rgba(0, 0, 0, .7);
+
+
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+
+
 }
 .relsite{
 border-radius: 10px;
@@ -550,8 +605,9 @@ border-radius: 10px;
   width: 220px;
 }
 footer{
+
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .colfour-item , .colfive-item, .update-item{
   background-color: #fff;
@@ -579,11 +635,53 @@ font-size: 12px;
 font-weight: bold;
 margin-left: 3px;
 }
-.colfive-item-others span:nth-child(n+3){
+.colfive-item-others span:nth-child(n+3), .update-item-others span:nth-child(n+3){
 font-weight: bold;
 display: inline-block;
-padding: 3.3px 7px;
+padding: 3.3px 6.2px;
 border-radius: 24px;
-background-color: #0bd;
+
 font-size: 11px;
+margin-bottom: 5px;
+}
+
+#genji{
+  background-color: #e5f855;
+  color: rgba(42, 109, 83, 0.7);
+}
+
+.colfive-item {
+ display: flex;
+ flex-direction: column
+}
+footer div ul{
+  list-style: none;
+
+}
+footer div ul li{
+  margin: 7px;
+  margin-left: 0px;
+  font-size: 13px;
+}
+
+.cori div{
+
+  text-align: center;
+
+
+}
+.update-item{
+  display: flex;
+flex-direction: column
+}
+footer div span {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+footer div:nth-child(n+2){
+  padding-left: 10px;
+}
+.colfive-item-others, .update-item-others{
+  margin-top:auto;
+
 }
