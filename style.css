@@ -216,7 +216,7 @@ display: grid;
 
 grid-auto-flow:column;
   display: grid;
-  grid-template-rows: 22% 22% 22% 22% 22%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
   border-top: 0.7px solid rgba(0, 0, 0, .4);
   padding-top: 20px;
 }
