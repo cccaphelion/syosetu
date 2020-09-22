@@ -207,7 +207,7 @@ aside {
 }
 
 .rank-container {
-  padding: 19px 0;
+
 }
 
 .novel-wrapper {
@@ -231,8 +231,16 @@ grid-auto-flow:column;
   padding: 10px;
   margin-bottom: 17px;
   transition: all 0.4s;
+  display: grid;
+    align-items: center;
+
 }
 
+.novel-item:nth-child(-n+10):nth-child(n+6){
+margin-right: 0px;
+
+
+}
 .novel-item:hover {
   box-shadow: 3px 3px 18px rgba(133, 213, 225, .7), -3px -3px 18px rgba(133, 213, 225, .7);
 }
@@ -241,6 +249,8 @@ grid-auto-flow:column;
   color: rgba(0, 0, 0, .7);
   font-weight: bold;
   font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-top: 26px;
 }
 .rank article {
  display: flex;
@@ -261,7 +271,8 @@ grid-auto-flow:column;
 
 .tag {
   display: inline-block;
-  font-size: 8px;
+  font-size: 11px;
+
 
   margin-left:auto;
 margin-right:0px;
@@ -458,6 +469,15 @@ border-top-right-radius:10px;
 background-color: #0bd;
 margin-bottom: 10px;
 margin-right: 10px;
+display: grid;
+grid-template-rows: 50% 50%;
+}
+
+.update-item:nth-child(5n){
+  margin-right: 0px;
+}
+.update-item-others span:nth-child(2){
+  display: block;
 }
 .colfive{
   display: grid;
@@ -469,17 +489,39 @@ margin-right: 10px;
 background-color: #0bd;
 margin-bottom: 10px;
 margin-right: 10px;
+
+display: grid;
+    grid-template-rows: 50% 50%;
+
+
+
+}
+.colfive-item:nth-child(5n){
+
+  margin-right: 0px;
+}
+
+.colfive-item-others span:nth-child(2){
+  display: block;
+}
+.box-title{
+
 }
 
 .colfour{
   display: grid;
 grid-template-columns: 25% 25% 25% 25%;
+
 }
 .colfour-item{
 
   background-color: #0bd;
   margin-bottom: 10px;
+  margin-right: 10px;
 
+}
+.colfour-item:nth-child(4n){
+  margin-right: 0px
 }
 .colfour-item img{
 width: 170px
