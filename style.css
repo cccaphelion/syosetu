@@ -3,9 +3,10 @@
   margin-top: 14px;
 }
 
-html {
+html,body {
   background-color: #f7f7fa;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+
 }
 
 .main-nav {
@@ -210,19 +211,22 @@ aside {
 }
 
 .novel-wrapper {
-  height: 30.9%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+
+display: grid;
+
+grid-auto-flow:column;
+  display: grid;
+  grid-template-rows: 22% 22% 22% 22% 22%;
   border-top: 0.7px solid rgba(0, 0, 0, .4);
   padding-top: 20px;
 }
 
 .novel-item {
+
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 14px rgba(133, 213, 225, .25), -2px -2px 14px rgba(133, 213, 225, .25);
-  width: 50%;
+
   margin-right: 17px;
   padding: 10px;
   margin-bottom: 17px;
@@ -235,6 +239,12 @@ aside {
 
 .box-title {
   color: rgba(0, 0, 0, .7);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.rank article {
+ display: flex;
+ flex-direction: column;
 }
 
 .title {
@@ -252,7 +262,9 @@ aside {
 .tag {
   display: inline-block;
   font-size: 8px;
-  margin-left: 20px;
+
+  margin-left:auto;
+margin-right:0px;
 }
 
 .rank-genre a:hover {
@@ -359,7 +371,15 @@ aside {
 .sub-title {
   color: rgba(0, 0, 0, .7);
   margin-bottom: 17px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
 }
+
+aside a:hover{
+    text-decoration: none;
+}
+
 
 .noti-title {
   font-size: 14px;
@@ -428,29 +448,52 @@ border-top-right-radius:10px;
 
 }
 
-
-.colfive-item{
-
-
-display: inline-block;
-width: 19%;
-height:5%;
+.update{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50% ;
+}
+.update-item{
+  padding: 10px;
 background-color: #0bd;
 margin-bottom: 10px;
+margin-right: 10px;
+}
+.colfive{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25% ;
+}
+.colfive-item{
+  padding: 10px;
+background-color: #0bd;
+margin-bottom: 10px;
+margin-right: 10px;
 }
 
+.colfour{
+  display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+}
 .colfour-item{
-  display: inline-block;
-  width: 23%;
-  height:6%;
+
   background-color: #0bd;
   margin-bottom: 10px;
 
 }
 .colfour-item img{
-width: 150px
+width: 170px
 }
 
+
+#auta{
+  display: grid;
+  grid-template-columns: 37% 63%;
+}
 .relsite img{
-  width: 250px;
+  width: 220px;
+}
+footer{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
