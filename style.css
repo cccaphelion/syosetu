@@ -621,6 +621,7 @@ border-radius: 10px;
   border-radius: 10px;
   width: 100%;
 }
+
 footer{
 
   display: grid;
@@ -698,7 +699,15 @@ footer div span {
 footer div:nth-child(n+2){
   padding-left: 10px;
 }
+footer div img{
+display:inline-block;
+padding-right:10px;
+}
+
+
+
 .colfive-item-others, .update-item-others{
   margin-top:auto;
 
 }
+
